@@ -7,7 +7,7 @@ import {
   Roboto_700Bold,
   useFonts,
 } from "@expo-google-fonts/roboto";
-import { Groups } from "@screens/Groups";
+import { Routes } from "@routes/index";
 import { StatusBar } from "react-native";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded === true ? <Groups /> : <Loading />}
+      {fontsLoaded === true ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
